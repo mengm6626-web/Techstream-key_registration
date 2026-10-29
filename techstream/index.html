@@ -228,9 +228,12 @@
 
   <form id="form">
     <!-- ប្រអប់បញ្ចូល MEGA Link (បន្ថែមថ្មី) -->
-    <label for="megaUrl">Mega Link ( Version 18 Text String)</label>
+    <label for="megaUrl"> Download ( Techstream  Version 18.00.08 )</label>
     <input id="megaUrl" type="url" placeholder="https://mega.nz/file/..." value="https://mega.nz/file/eb4XGBBa#kmcahOsBXArJOTbkM-WG-HKp2KrjzXC6PVke5doYrNA">
-
+  <form id="form">
+  <!--  VCI    -->
+    <label for="megaUrl">  VCI Driver Download  </label>
+    <input id="megaUrl" type="url" placeholder="https://mega.nz/file/..." value="https://mega.nz/file/uGJhgJwT#ltaq2qQkC_NpEmpoMgw3aa8i2CYJXvrGhWkpdgXgQRY">
     <label for="sid">Software ID</label>
     <input id="sid" maxlength="128" placeholder="បញ្ចូល Software ID របស់អ្នកទីនេះ..." required>
     
@@ -257,7 +260,7 @@
     <div class="btn-group">
       <!-- ប៊ូតុងទាញយក/បើក Link Mega (បន្ថែមថ្មី) -->
       <button class="btn-mega" type="button" id="openMegaBtn">
-        <span>📁 បើក Mega Link (Version 18)</span>
+        <span>📁 បើក Download Link (Version 18.00.08)</span>
       </button>
 
       <button class="btn-telegram" type="submit">
@@ -285,7 +288,7 @@
               `🛠 **Version:** ${version}\n` +
               `🆔 **Software ID:** \`${sid}\`\n` +
               `📅 **Period:** ${days} days\n` +
-              `📞 **Contact:** 069778837`;
+              `📞 **Contact me:** 069778837`;
     
     if (megaUrl) {
       msg += `\n🔗 **Mega File:** ${megaUrl}`;
@@ -297,7 +300,7 @@
   $('openMegaBtn').addEventListener('click', () => {
     let megaUrl = $('megaUrl').value.trim();
     if (!megaUrl) {
-      alert('សូមបញ្ចូល Mega Link!');
+      alert('សូមបញ្ចូល Download Link!');
       return;
     }
     window.open(megaUrl, '_blank');
